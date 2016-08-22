@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sublime Counters</title>
+	<link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+	<div class="container">
+		<div class= "seperator">///////////////////////////////////////////////</div>
+		<h2>History of Numbers:</h2>
+		<!-- Dynamic Counting -->
+		<a href="https://en.wikipedia.org/wiki/1_(number)" target="blank">
+			<p class="bigboy num_1"></p>
+		</a>
+		<a href="https://en.wikipedia.org/wiki/2_(number)" target="blank">
+			<p class="bigboy num_2"></p>
+		</a>
+		<a href="https://en.wikipedia.org/wiki/3_(number)" target="blank">
+			<p class="bigboy num_3"></p>
+		</a>
+		<div class= "seperator">///////////////////////////////////////////////</div>
+		<h2>How old are you?</h2>
+		<!-- Counting -->
+		<form>
+			<input type="number" id="myAge" value="1">
+			<input type="button" class="btn tiny" value= "Send" onclick="getAge()">
+		</form>
+		
+		<h3>You have approximately <span id ="ageInput">00</span> years to live</h3>
+
+		<h1 class="bigboy" id="bigUn">be honest</h1>
+		<div class= "seperator">///////////////////////////////////////////////</div>
+		<div class="box">    
+			<label for="qty"><abbr title="Quantity">Qty</abbr></label>
+			<input id="qty" value="0" />
+			<button id="down" onclick="modify_qty(-1)">-1</button>
+			<button id="up" onclick="modify_qty(1)">+1</button>
+		</div>
+	</div>
+	<script src="counter.js"></script>
+</body>
+</html>
