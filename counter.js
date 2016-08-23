@@ -14,7 +14,7 @@ console.log(counter());  // Returns 4
 // ANOTHER WAY TO USE A COUNTER
 function getAge() {
 	var age = parseInt(document.getElementById("myAge").value);
-	var lifeSpan = 82;
+	var lifeSpan = 80;
 	var diff = lifeSpan - age;
 	document.getElementById("ageInput").innerHTML = diff;
 	//console.log(document.getElementById("ageInput").value = document.getElementById("ageInput").innerHTML = age);
